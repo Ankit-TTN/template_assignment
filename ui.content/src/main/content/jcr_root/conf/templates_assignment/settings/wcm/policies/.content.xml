@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <rep:policy/>
+    <wcm jcr:primaryType="nt:unstructured">
+        <foundation jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <responsivegrid jcr:primaryType="nt:unstructured">
+                    <content-default
+                        jcr:description="Policy for editable layout containers"
+                        jcr:lastModified="{Date}2020-04-11T05:21:02.623+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="templates_assignment Default"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:General,group:templates_assignment,/apps/templates_assignment/components/form/container]"
+                        policyResourceType="wcm/foundation/components/responsivegrid">
+                        <cq:authoring jcr:primaryType="nt:unstructured">
+                            <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                                <image
+                                    jcr:primaryType="nt:unstructured"
+                                    assetGroup="media"
+                                    assetMimetype="image/*"
+                                    droptarget="image"
+                                    resourceType="templates_assignment/components/content/image"
+                                    type="Images"/>
+                            </assetToComponentMapping>
+                        </cq:authoring>
+                        <jcr:content
+                            jcr:primaryType="nt:unstructured"
+                            mergeList="{Boolean}true"/>
+                    </content-default>
+                    <policy_24772835653037
+                        jcr:lastModified="{Date}2020-04-11T05:22:14.458+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="my-general-component-policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="group:General">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_24772835653037>
+                </responsivegrid>
+                <image jcr:primaryType="nt:unstructured">
+                    <policy_1586582152725
+                        jcr:lastModified="{Date}2020-04-11T10:47:40.837+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="my-image-policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        allowUpload="true"
+                        maxHeight="100"
+                        maxWidth="100"
+                        minHeight="50"
+                        minWidth="50">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <plugins jcr:primaryType="nt:unstructured">
+                            <crop
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <aspectRatios
+                                    jcr:primaryType="nt:unstructured"
+                                    override="true">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        name="Wide Landscape"
+                                        ratio="0.8284"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        name="Landscape"
+                                        ratio="0.6180"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        name="Square"
+                                        ratio="1"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        name="Portrait"
+                                        ratio="1.6180"/>
+                                </aspectRatios>
+                            </crop>
+                            <rotate
+                                jcr:primaryType="nt:unstructured"
+                                features="right"/>
+                            <flip
+                                jcr:primaryType="nt:unstructured"
+                                features="-"/>
+                            <map
+                                jcr:primaryType="nt:unstructured"
+                                features="rectangle,launch,unlaunch,confirm,circle,polygon"/>
+                        </plugins>
+                    </policy_1586582152725>
+                </image>
+            </components>
+        </foundation>
+    </wcm>
+    <templates_assignment jcr:primaryType="nt:unstructured">
+        <components jcr:primaryType="nt:unstructured">
+            <form jcr:primaryType="nt:unstructured">
+                <container jcr:primaryType="nt:unstructured">
+                    <form-container
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="templates_assignment Form"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/apps/templates_assignment/components/form/button,/apps/templates_assignment/components/form/hidden,/apps/templates_assignment/components/form/options,/apps/templates_assignment/components/form/text]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </form-container>
+                </container>
+            </form>
+            <content jcr:primaryType="nt:unstructured">
+                <image jcr:primaryType="nt:unstructured">
+                    <policy_1586577495879
+                        jcr:lastModified="{Date}2020-04-11T09:30:54.742+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="my-image-policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        allowedRenditionWidths="1000"
+                        allowUpload="true"
+                        disableLazyLoading="true"
+                        displayPopupTitle="false"
+                        isDecorative="false"
+                        jpegQuality="{Long}100"
+                        titleValueFromDAM="false"
+                        uuidDisabled="false">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <plugins jcr:primaryType="nt:unstructured">
+                            <crop
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <aspectRatios jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        name="Wide Landscape"
+                                        ratio="1"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        name="Landscape"
+                                        ratio="1"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        name="Square"
+                                        ratio="1"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        name="Portrait"
+                                        ratio="1"/>
+                                    <item4 jcr:primaryType="nt:unstructured"/>
+                                </aspectRatios>
+                            </crop>
+                            <flip
+                                jcr:primaryType="nt:unstructured"
+                                features="horizontal,vertical"/>
+                            <rotate
+                                jcr:primaryType="nt:unstructured"
+                                features="-"/>
+                        </plugins>
+                    </policy_1586577495879>
+                </image>
+                <button jcr:primaryType="nt:unstructured"/>
+            </content>
+        </components>
+    </templates_assignment>
+    <foundation jcr:primaryType="nt:unstructured">
+        <components jcr:primaryType="nt:unstructured"/>
+    </foundation>
+</jcr:root>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/templates_assignment" mode="merge"/>
+    <filter root="/content/templates_assignment" mode="merge"/>
+    <filter root="/content/my-site" mode="merge"/>
+    <filter root="/content/dam/templates_assignment" mode="merge"/>
+</workspaceFilter>
